@@ -57,32 +57,30 @@ checkboxesWrapper.addEventListener('click', handleCheckboxClick)
 headerButton.addEventListener('click', toggleActiveSidebar)
 
 ///////////////////////////////////////////
-// пунты 2
 
+// пунты 2
 function moveElementRight(arr, steps) {
   console.log('входных данные', 'массив', arr, 'шаги', steps)
 
   for (let i = 0; i < steps; i++) {
-      arr.unshift(arr.pop())
+    arr.unshift(arr.pop())
   }
-   console.log('результат',arr)
+  console.log('результат', arr)
 }
 
 moveElementRight([1, 2, 3, 4, 5], 3)
 
-
 // пунты 3
-
-const findCommon = (str1, str2) => {
+const findLongestSubString = (str1, str2) => {
   console.log('входных данные', 'строка 1 -', str1, 'строка 2 -', str2)
   let arr = []
   let subStr
-  for (let i = 0; i < str1.length; i++) { 
+  for (let i = 0; i < str1.length; i++) {
     for (let j = i + 1; j <= str1.length; j++) {
       subStr = str1.slice(i, j);
-        if (str2.indexOf(subStr) !== -1) {
-          arr.push(subStr)
-        }
+      if (str2.indexOf(subStr) !== -1) {
+        arr.push(subStr)
+      }
     }
   }
   arr.sort((a, b) => {
@@ -91,4 +89,4 @@ const findCommon = (str1, str2) => {
   console.log('результат', arr[0])
 };
 
-findCommon("aababba", "abbaabcd")
+findLongestSubString("aababba", "abbaabcd")

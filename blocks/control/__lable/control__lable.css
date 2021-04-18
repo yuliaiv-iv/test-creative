@@ -3,3 +3,7 @@
   font-size: 22px;
   margin-bottom: 10px;
 }
+
+.control__lable:hover {
+  opacity: 0.5;
+}
