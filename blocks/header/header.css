@@ -1,0 +1,12 @@
+@import url(./__container/header__container.css);
+@import url(./__logo/header__logo.css);
+@import url(./__button/header__button.css);
+@import url(./__button-span/header__button-span.css);
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgb(143, 143, 143);
+}

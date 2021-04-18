@@ -1,0 +1,31 @@
+@import url(./__list/sidebar__list.css);
+@import url(./__link/sidebar__link.css);
+@import url(./__list-item/sidebar__list-item.css);
+@import url(./_hidden/sidebar_hidden.css);
+
+.sidebar {
+  background-color: rgb(175, 175, 175);
+  width: 260px;
+  height: 100%;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  transform: translateX(0);
+  transition: all .5s ease;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px)  {
+  .sidebar.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 680px)  {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+

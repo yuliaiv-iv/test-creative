@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Тестовые задания Frontend</title>
+</head>
+
+<body class="root">
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__logo">Logo</h1>
+      <button class="header__button">
+        <span class="header__button-span"></span>
+      </button>
+    </div>
+  </header>
+  <main class="content">
+    <section class="control">
+      <div class="control__main">
+        <input class="control__checkbox-main" type="checkbox"id="all" />
+        <label class="control__lable control__lable_main" for="all">Скрыть/Показать все изображения</label>
+      </div>
+      <div class="control__list">
+        <div class="control__item">
+          <img class="control__img" src="./images/image1.jpg" alt="Изображение" />
+          <input class="control__checkbox" type="checkbox" id="image1" />
+          <label class="control__lable" for="image1">Скрыть изображение</label>
+        </div>
+        <div class="control__item">
+          <img class="control__img" src="./images/image2.jpg" alt="Изображение" />
+          <input class="control__checkbox" type="checkbox" id="image2" />
+          <label class="control__lable" for="image2">Скрыть изображение</label>
+        </div>
+        <div class="control__item">
+          <img class="control__img" src="./images/image3.jpg" alt="Изображение" />
+          <input class="control__checkbox" type="checkbox" id="image3" />
+          <label class="control__lable" for="image3">Скрыть изображение</label>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="sidebar sidebar_hidden">
+    <nav class="sidebar__nav">
+      <ul class="sidebar__list">
+        <li class="sidebar__list-item">
+          <a class="sidebar__link" href="#">Главная</a>
+        </li>
+        <li class="sidebar__list-item">
+          <a class="sidebar__link" href="#">О Компании</a>
+        </li>
+        <li class="sidebar__list-item">
+          <a class="sidebar__link" href="#">Тарифы</a>
+        </li>
+        <li class="sidebar__list-item">
+          <a class="sidebar__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>

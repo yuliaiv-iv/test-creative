@@ -1,0 +1,21 @@
+.content {
+  width: calc(100% - 260px);
+  margin-left: auto;
+  transition: all .5s ease;
+  padding-top: 70px;
+}
+
+@media screen and (max-width: 1200px)  {
+  .content {
+    width: 100%;
+  }
+  .content.active {
+    width: calc(100% - 260px);
+  }
+}
+
+@media screen and (max-width: 680px)  {
+  .content.active {
+    width: 100%;
+  }
+}

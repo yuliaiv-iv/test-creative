@@ -1,0 +1,6 @@
+@media screen and (max-width: 1200px)  {
+  .sidebar_hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,7 @@
+.control__checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  vertical-align: inherit;
+  cursor: pointer;
+}

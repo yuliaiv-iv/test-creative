@@ -1,0 +1,48 @@
+.header__button {
+  display: none;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1200px)  {
+  .header__button {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 19px;
+  }
+
+  .header__button::before,
+  .header__button::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+
+  .header__button::before {
+    top: 0;
+  }
+
+  .header__button::after {
+    bottom: 0;
+  }
+
+  .header__button.active::before {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  
+  .header__button.active::after {
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+}

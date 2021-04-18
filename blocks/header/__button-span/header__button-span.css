@@ -1,0 +1,14 @@
+@media screen and (max-width: 1200px)  {
+  .header__button-span {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 100%;
+    height: 3px;
+  }
+  
+  .header__button-span.active {
+    display: none;
+  }
+}
